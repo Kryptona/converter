@@ -1,0 +1,43 @@
+@import '../styles/default';
+
+.root {
+  width: 100%;
+  min-height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  //display: grid;
+  //grid-template-areas:
+  //  'header header header'
+  //  'empty cards empty'
+  //  'footer footer footer';
+  //grid-template-rows: 112px 1fr 80px;
+  //grid-template-columns: 10% 1fr 10%;
+  //grid-gap: 5px;
+
+  .header {
+    //grid-area: header;
+    //align-self: center;
+    //justify-self: center;
+    height: 112px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $pink_color;
+    font-family: $default_font;
+    color: $font-color;
+    font-weight: bold;
+    font-size: 36px;
+  }
+  .cards {
+    grid-area: cards;
+    display: flex;
+    justify-content: center;
+  }
+  .footer {
+    grid-area: footer;
+  }
+  .empty {
+    grid-area: empty;
+  }
+}
